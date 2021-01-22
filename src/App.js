@@ -1,9 +1,12 @@
 import './App.css';
 
-function App() {
+const App = () => {
+
   return (
-    <h1>Simple App</h1>
-  );
+    <div>
+      App
+    </div>
+  )
 }
 
 export default App;
