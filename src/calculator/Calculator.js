@@ -34,20 +34,20 @@ const Calculator = (props) => {
       <fieldset class='row'>
         <legend>Kalkulator:</legend>
         <div class='inputs'>
-          <label for="x_value">First name:</label><br />
+          <label for="x_value">X value:</label><br />
           <input id='x_value' value={x_value} onChange={(event) => changeXValue(event)}/>
         </div>
         <div class='inputs'>
-          <label for="y_value">Last name:</label><br />
+          <label for="y_value">Y value:</label><br />
           <input id='y_value' value={y_value} onChange={(event) => changeYValue(event)}/><br />
         </div>
         <div class='inputs'>
           <label for="operation">Operation:</label><br />
           <select id="operation" onChange={(event) => changeOperation(event)}>
-            <option value="+">Addition</option>
-            <option value="-">Subtraction</option>
-            <option value="*">Multiplication</option>
-            <option value="/">Division</option>
+            <option value="+">X+Y</option>
+            <option value="-">X-Y</option>
+            <option value="*">X*Y</option>
+            <option value="/">X/Y</option>
           </select>
         </div>
         <div class='inputs'>
