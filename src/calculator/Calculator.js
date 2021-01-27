@@ -8,20 +8,22 @@ const Calculator = (props) => {
   const [operation, setOperation] = useState('+')
 
   useEffect(() => {
-    operation == '+' && setResult(x_value + y_value);
-    operation == '-' && setResult(x_value - y_value);
-    operation == '*' && setResult(x_value * y_value);
-    operation == '/' && setResult(x_value / y_value);
+    operation == '+' && setResult(parseFloat(x_value) + parseFloat(y_value));
+    operation == '-' && setResult(parseFloat(x_value) - parseFloat(y_value));
+    operation == '*' && setResult(parseFloat(x_value) * parseFloat(y_value));
+    operation == '/' && setResult(parseFloat(x_value) / parseFloat(y_value));
   }, [x_value, y_value, operation]);
 
   const changeXValue = (event) => {
-    const input = event.target.value;
-    setXValue(parseInt(input));
+    let input = event.target.value;
+    input = input.replace(',','.')
+    setXValue(input);
   }
 
   const changeYValue = (event) => {
-    const input = event.target.value;
-    setYValue(parseInt(input));
+    let input = event.target.value;
+    input = input.replace(',','.')
+    setYValue(input);
   }
 
   const changeOperation = (event) => {
