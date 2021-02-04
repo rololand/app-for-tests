@@ -4,7 +4,16 @@ import Calculator from './calculator/Calculator.js'
 const App = () => {
 
   return (
-    <Calculator />
+    <div id="container">
+      <div class="row">
+        <div id="menu">
+          Menu
+        </div>
+        <div id="app">
+          <Calculator />
+        </div>
+      </div>
+    </div>
   )
 }
 
