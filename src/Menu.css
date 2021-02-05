@@ -1,0 +1,14 @@
+.menuButtonContainer {
+  margin: 5px;
+  padding: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  border-width: 1px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menuButtonContainer:hover {
+  background-color: #cccccc
+}

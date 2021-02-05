@@ -1,0 +1,39 @@
+#taskList {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.taskDone {
+  text-decoration: line-through;
+}
+
+#newTaskContainer {
+  margin-bottom: 10px;
+  font-size: 21px;
+}
+
+#newTask {
+  padding: 2px;
+  width: 90%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #e6e6e6;
+  font-size: 15px;
+}
+
+#addTaskButton {
+  width: 10%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  border-width: 1px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#addTaskButton:hover {
+background-color: #cccccc
+}

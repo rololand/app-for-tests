@@ -34,7 +34,7 @@ const Calculator = (props) => {
   return (
     <div id='calculator'>
       <fieldset class='row'>
-        <legend>Kalkulator:</legend>
+        <legend>Calculator:</legend>
         <div class='inputs'>
           <label for="x_value">X value:</label><br />
           <input id='x_value' value={x_value} onChange={(event) => changeXValue(event)}/>
