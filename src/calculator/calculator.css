@@ -9,9 +9,9 @@ fieldset {
 }
 
 #calculator {
-  width: 50%;
   margin-left: auto;
   margin-right: auto;
+  width: 490px;
 }
 
 #x_value, #y_value, #operation, #result {

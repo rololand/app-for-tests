@@ -11,21 +11,14 @@ const TaskElement = (props) => {
   }
 
   return (
-    <div className="taskElement row">
-      <div className={props.isDone ? "taskDone" : ""}>
+    <div className="row">
+      <div  className={props.isDone ? "taskElement taskDone" : "taskElement"}
+            onClick={() => changeChecked()}>
         {props.name}
-
       </div>
-      <div className="taskElementButton">
-        <div className="taskButtonContainer">
-          <div id="deleteTask" onClick={props.deleteTask}>X</div>
-          <input name="isDone" type="checkbox"
-                checked={isChecked}
-          />
-          <span class="checkmark" onClick={() => changeChecked()}></span>
-        </div>
-      </div>
+      <div class="deleteTaskButton" onClick={props.deleteTask}>X</div>
     </div>
+
   )
 }
 

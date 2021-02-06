@@ -12,6 +12,7 @@
 
 #menu {
   width: 15%;
+  min-width: 120px;
   background-color: #e6e6e6;
   margin: 10px;
   padding: 40px 10px;
@@ -19,6 +20,7 @@
 
 #app {
   width: 75%;
+  min-width: 500px;
   background-color: #e6e6e6;
   margin: 10px;
   padding: 40px 10px;

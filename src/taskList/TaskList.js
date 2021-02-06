@@ -57,13 +57,15 @@ const TaskList = (props) => {
             <input id='newTask' value={newTask} onChange={(event) => changeNewTask(event)}/>
             <div id="addTaskButton" onClick={() => addTask()}>Add</div>
           </div>
+          <ul>
           {tasks.map(task =>
-              <TaskElement key={task.name}
+              <li><TaskElement key={task.name}
                           name={task.name}
                           isDone={task.isDone}
                           markDone={() => markDone(task.name)}
-                          deleteTask={() => deleteTask(task.name)} />
+                          deleteTask={() => deleteTask(task.name)} /></li>
             )}
+          </ul>
       </fieldset>
     </div>
   )
