@@ -28,11 +28,13 @@ const TaskList = (props) => {
 
   const deleteTask = (name) => {
     let temp = [...tasks]
+    let index = ''
     temp.forEach((item, i) => {
       if (item.name === name) {
-        temp.pop(i)
+        index = i
       }
     });
+    temp.splice(index, 1)
     setTasks(temp)
   }
 
